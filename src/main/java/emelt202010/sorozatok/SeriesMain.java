@@ -15,7 +15,7 @@ public class SeriesMain {
         List<FilmSeries> series = fm.loadFile();
         SeriesService ss = new SeriesService(series);
 
-        System.out.println("Ismert datumu episodok szama: " + ss.getNumberOfNotNullDate());
+        System.out.println("Ismert datumu epizodok szama: " + ss.getNumberOfNotNullDate());
 
         System.out.printf("Megnezett epizodok aranya: %.2f%%%n", 100 * ss.getWatchedSeriesRate());
 
